@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seda &amp; Olivo | Cocina Fusión</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <div class="brand">Seda &amp; Olivo</div>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#reserva">Reserva</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Tokio x Santorini</p>
+      <h1>Donde el Sol se encuentra con el Dragón</h1>
+      <p class="hero-sub">
+        Cocina fusión que mezcla brisas mediterráneas con energía neon.
+      </p>
+      <a class="cta" href="#reserva">Reservar mesa</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <h2>Menu Interactivo</h2>
+        <p>Explora nuestras propuestas sin salir de la pagina.</p>
+      </div>
+
+      <div class="tabs">
+        <input type="radio" name="tab" id="tab-tapas" checked>
+        <input type="radio" name="tab" id="tab-bento">
+
+        <div class="tab-labels">
+          <label for="tab-tapas">Tapas Fusion</label>
+          <label for="tab-bento">Bento Mediterraneo</label>
+        </div>
+
+        <div class="tab-panels">
+          <div class="panel panel-tapas">
+            <article class="menu-card">
+              <h3>Gyoza de aceituna negra</h3>
+              <p>Relleno de oliva kalamata, miso blanco y aceite de sésamo.</p>
+            </article>
+            <article class="menu-card">
+              <h3>Brochetas yuzu-aegean</h3>
+              <p>Pollo marinando en yuzu, oregano y sal marina.</p>
+            </article>
+            <article class="menu-card">
+              <h3>Tempura de calamar</h3>
+              <p>Toque de tinta, limón confitado y salsa ponzu.</p>
+            </article>
+          </div>
+
+          <div class="panel panel-bento">
+            <article class="menu-card">
+              <h3>Bento azul Egeo</h3>
+              <p>Arroz perfumado, atún sellado y pepino encurtido.</p>
+            </article>
+            <article class="menu-card">
+              <h3>Ensalada de wakame y feta</h3>
+              <p>Texturas marinas con aceite de oliva y hierbas frescas.</p>
+            </article>
+            <article class="menu-card">
+              <h3>Dolma de shiitake</h3>
+              <p>Hoja de parra con shiitake, limón y reducción teriyaki.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="section-head">
+        <h2>Galeria Visual</h2>
+        <p>Cuatro momentos para abrir el apetito.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="photo p1"><figcaption>Neon bar</figcaption></figure>
+        <figure class="photo p2"><figcaption>Brisa azul</figcaption></figure>
+        <figure class="photo p3"><figcaption>Fuego y sal</figcaption></figure>
+        <figure class="photo p4"><figcaption>Jardin zen</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="media" id="transicion">
+      <div class="section-head">
+        <h2>Transicion en Vivo</h2>
+        <p>Una experiencia audiovisual entre neon y mar.</p>
+      </div>
+
+      <div class="video-frame">
+        <video class="hero-video" autoplay muted loop playsinline poster="image/fotograma1.jpeg">
+          <source src="image/videoTransicion.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section class="reservation" id="reserva">
+      <div class="section-head">
+        <h2>Reserva</h2>
+        <p>Te esperamos con luz, sabor y mar.</p>
+      </div>
+
+      <form class="reserve-form">
+        <label>
+          Nombre
+          <input type="text" name="name" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          Fecha
+          <input type="date" name="date" required>
+        </label>
+        <label>
+          Numero de personas
+          <input type="number" name="people" min="1" max="12" placeholder="2" required>
+        </label>
+        <button class="cta cta-small" type="submit">Confirmar reserva</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Seda &amp; Olivo · Cocina fusion con alma mediterranea</p>
+  </footer>
+</body>
+</html>
